@@ -1,5 +1,6 @@
 .plans {
     padding: 5.6vw;
+    text-align: center;
 
     h2 {
         text-align: center;
@@ -10,8 +11,14 @@
         justify-content: space-around;
         margin-top: 50px;
 
-        @media (max-width: 768px) {
-            display: block;
+        @media (max-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5.6vw;
+            text-align: center;
+            min-height: 60vh; /* Ajuste a altura conforme necessário */
         }
 
         .button {
@@ -23,6 +30,8 @@
             padding: 60px 44px 44px;
             max-width: 380px;
             width: 100%;
+            display: flex;
+            flex-direction: column;
 
             &:nth-child(2) {
                 background-image: url(../images/fundo_combo_plus.png);
@@ -32,6 +41,7 @@
 
             img {
                 height: 83px;
+                align-self: center;
             }
 
             strong {
